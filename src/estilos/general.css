@@ -55,4 +55,42 @@ header {
   width: 90%;
   margin-top: 15px;
   color: #000;
+
+}
+
+@media only screen and (max-width: 1024px) {
+  h2 {
+    font-size: 22.5px
+  }
+  p {
+    font-size: 12px
+  }
+}
+@media only screen and (max-width: 768px) {
+  h2{
+    font-size: 20px
+  }
+  .card1 {
+    width: 99.99%;
+  }
+  .description {
+    height: 50px;
+    overflow: hidden;
+  }
+  .card-body a {
+    margin-top: 10px
+  }
+
+}
+@media only screen and (max-width: 640px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #fff;
+  }
+  .row1 ,.row2, .row3 {
+    width: 100%;
+  }
+
 }/*# sourceMappingURL=general.css.map */
