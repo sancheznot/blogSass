@@ -1,0 +1,58 @@
+/* Variables
+ * Las variables son un espacio de memoria que guardan informacion
+ * Las siguientes son variables */
+/*Variable global
+ * Puede ser utilizada en todo el documento */
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 1000px;
+}
+
+header {
+  padding: 10px;
+  background: rgb(52, 52, 52);
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: #fff;
+}
+
+.row1 {
+  background: rgb(52, 52, 52);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.row2 {
+  background: rgb(52, 52, 52);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.row3 {
+  background: rgb(52, 52, 52);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.card1 {
+  width: 90%;
+  margin-top: 15px;
+  color: #000;
+}/*# sourceMappingURL=general.css.map */

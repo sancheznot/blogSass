@@ -1,0 +1,144 @@
+/*
+ Variables
+ Las variables son un espacio de memoria que guardan informacion
+ Las siguientes son variables
+
+/*Variable global
+ Puede ser utilizada en todo el documento
+// $variable: red
+
+// /*Mixings
+//     Los mixings son un codigo que puede contener ciertas propiedades
+//     y valores que podemos reutilizar. Es como una variable, pero
+//     que guarda un conjunto de informacion
+// @mixin principal($color: red, $background: green)
+//     /*Variable local
+//         Solo se puede utilizar en la seccion de codigo
+//         en la que se encuentre la variable
+//     color: $color
+//     $size: 14px
+//     /* Condicionales y condiciones
+//         Operadores de igualdad
+//         = (usualmente significa asignacion)
+//         == (igualdad, comparacion)
+//         != (es diferente a)
+//     @if $background != green
+//         background-color: $background
+//         /* Operadores logicos
+//             OR: significa (O), al menos una condicion tiene que cumplirse para
+//             ejecutar el codigo
+//             AND: significa (Y), todas las condiciones se tienen que cumplir para
+//             ejecutar el codigo
+//             NOT: signifca (NO), la condicion no se debe complir para ejecutar el
+//             codigo
+//         @if $background == purple not $background == red
+//             background-color: yellow
+//     @else
+//         /* Operadores relacionales
+//             > MAYOR QUE
+//             >= MAYOR IGUAL QUE
+//             < MENOR QUE
+//             <= MENOR IGUAL QUE
+//         @if $size > 14px
+//             background-color: purple
+
+// .alert
+//    @include principal(yellow)
+//    padding: 20px
+
+// .sucess
+//    @include principal(green,blue)
+
+// //Asi lo hariamos en CSS
+// .card .img
+//     width: 300px
+
+// .card .paragraph
+//     font-size: 15px 
+
+// //Asi se hace en SASS
+// .card
+//     background-color: red
+//     .img
+//         border-radius: 150px
+//     .paragraph
+//         font-size: 20px
+
+// $sizes: 40px, 50px, 60px
+
+// @each $size in $sizes
+//   .width-#{$size}
+//     font-size: $size
+//     height: $size
+//     width: $size
+//     background-color: green
+
+// $colors: green, red, blue, yellow
+// @each $color in $colors
+//   .button-#{$color}
+//     background-color: $color
+
+// /* Ejercicio
+//     Realizar un blog que tenga, una barra de navegacion.
+//     Un titular
+//     Dos filas, cada una con 3 columnas
+//     Estas contendran un blog, con imagen, titular, descripcion corta y 
+//     un boton de leer
+//     esta pagina debe ser responsive
+$Cwhite: #fff
+$Cblack: #000
+
+.container
+    margin: auto
+    display: flex
+    flex-direction: row
+    width: 100%
+    height: 1000px
+
+header
+    padding: 10px
+    background: rgb(52, 52, 52)
+    
+
+.main
+    display: flex
+    flex-direction: row
+    width: 100%
+    color: $Cwhite
+.row1
+    background: rgb(52, 52, 52)
+    // height: 100%
+    width: 50%
+    display: flex
+    flex-direction: column
+    padding: 10px
+    justify-content: center
+    align-items: center
+.row2
+    background: rgb(52, 52, 52)
+    // height: 100%
+    width: 50%
+    display: flex
+    flex-direction: column
+    // justify-content: center
+    align-items: center
+    padding: 10px
+.row3
+    background: rgb(52, 52, 52)
+    // height: 100%
+    width: 50%
+    display: flex
+    flex-direction: column
+    // justify-content: center
+    align-items: center
+    padding: 10px
+
+// MAIN SECTION
+
+.card1
+    width: 90%
+    margin-top: 15px
+    color: $Cblack
+
+
+    
